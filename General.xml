@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Selenium Test Suite" outputdirectory="test-output">
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter" />
+        <listener class-name="org.testng.reporters.FailedReporter" />
+        <listener class-name="org.testng.reporters.SuiteHTMLReporter" />
+        <listener class-name="org.testng.reporters.JUnitReportReporter"/>
+        <listener class-name="org.testng.reporters.TestHTMLReporter" />
+        <listener class-name="org.testng.reporters.EmailableReporter2" />
+
+
+
+        />
+
+
+    </listeners>
+    <test name="Login Test">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="Tests.LoginTest"/>
+        </classes>
+    </test>
+
+</suite>
